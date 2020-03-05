@@ -1,0 +1,52 @@
+nav{
+    .flexR();
+    position: sticky;
+    padding:5px;
+    background-color: @white;
+    
+    
+    li{
+        list-style: none;
+        margin:0 auto;
+        font-size: @f * 1.5;
+        padding: 5px;
+        
+        &:nth-child(2){
+        @media only screen and (max-width: 800px){
+        display: none;
+        }
+     }
+    }
+    
+}
+.logo{
+    
+        background-color:@green;
+        border-radius: 90%;
+        padding:10px;
+        box-shadow: 10px 10px black;
+        &:hover{
+            background-color: @darkGreen;
+            opacity: .9;
+        }
+
+        &:active{
+            transform: translateY(4px);
+            transform: translateX(4px);
+            box-shadow: 5px 5px black;
+        }
+    }
+
+#logIn{
+    border: solid 2 black;
+    border-radius: 15px;
+    background-color: @green;
+    color:@white;
+    
+    &:visited, &:link {
+        color:@white;
+    }
+    &:hover{
+        background-color: @darkGreen;
+    }
+}

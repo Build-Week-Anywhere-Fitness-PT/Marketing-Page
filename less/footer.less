@@ -1,0 +1,31 @@
+.footer{
+  ul{
+    .flexC();  
+        .svgBg();
+        height:100vh;
+        width:100vw;
+        li{
+          padding: 10px;
+          margin: 20px;
+            list-style: none;
+            font-size: @f * 2;
+            
+        }
+      }  
+}
+
+#signUp{
+  border: black 2px solid;
+  border-radius: 30px;
+  background-color: @green;
+  box-shadow: black 5px 5px;
+
+  &:hover{
+    background-color: @darkGreen;
+  }
+
+  &:active{
+    transform:translateY(4px);
+    box-shadow: 3px 3px black;
+  }
+}
