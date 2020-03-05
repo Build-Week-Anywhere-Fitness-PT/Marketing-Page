@@ -1,0 +1,138 @@
+#landingSection{ //landing section starts
+    height:100vh;
+    width:100vw;
+    .flexR();
+    .svgBg();
+    img{
+        .imgStyles();
+            @media only screen and (max-width: 400px){
+                display: none;
+            }
+           
+    }
+}
+
+#lSText{
+    .flexC();
+    padding: 20px;
+
+    h1{
+        font-size: @f*3;
+        border-bottom: solid black 2px;
+    }
+    
+    p{
+        font-size: @f*2;
+    }
+   
+}  
+//all keypoints
+.keypoints{
+    padding: 10px;
+    @media only screen and (max-width: 800px){
+        display: block;
+    }
+    h2{
+        font-size: @f*2;
+        border-bottom: solid black 2px;
+    }
+    p{
+        font-size: @f* 1.2;
+        padding:10px;
+        
+    }
+    img{
+        .imgStyles();
+        @media only screen and (max-width: 400px){
+        display: none;
+        }
+    }
+    .svgBg();
+    
+    
+}
+// keypoint 1 starts
+
+#keyPoint1{
+    
+    img{
+        height:30%;
+        width: 30%;
+        
+    }
+    div{
+        .flexC();
+}
+
+}
+
+//keypoint 2 starts
+
+#keyPoint2{
+    div{
+        .flexR();
+        img{
+            
+            height:50%;
+            width:50%;
+            
+        }
+    }
+}
+
+//keypoint 3  starts
+#keyPoint3{
+    div{
+        .flexR();
+        div{
+            height:60%;
+            width:50%;
+            .flexC();
+            @media only screen and (max-width: 800px){
+                    height: 100%;
+                    width: 100%;
+               }
+           
+            }
+            img{
+                
+                @media only screen and (max-width: 800px){
+                        display: none;
+                    }
+            }
+        }
+    }
+
+//keypoint 4 starts
+#keyPoint4{
+    div{
+        .flexR();
+        img{
+            height: 40%;
+            width: 50%;
+        }
+    }
+}
+ #hereLink{
+     &:hover{
+         background-color: @darkGreen;
+         color: @green;
+         border-radius: 15px;
+         padding:5px;
+     }
+ }
+
+ //keyPoint 5
+ #keyPoint5{
+     div{
+         p{
+             margin: 10px;
+         }
+        .flexC();
+     img{
+         height: 50%;
+         width:50%;
+     }
+     }
+     
+ }
